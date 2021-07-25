@@ -20,16 +20,16 @@ https://gestaocad.netlify.app/
 
 
 2. Na tela de Cadastro de Cliente o usuário preenche as informações do cliente e clica em cadastrar, para inserir o registro no LocalStorage.
-Clique no botão "Voltar", caso queira ir para a página inicial.
+Caso deseje retornar para página inicial, basta Clicar no botão "Voltar".
 
 ![2021-07-25 (9)_LI](https://github.com/CarmoPJunior/gama-gestao-cadastros/blob/main/img/cadastro_cliente.png)
 
 
 
 3. Na tela de Cadastro de Produto o usuário preenche as informações do produto e clica em cadastrar, para inserir o registro no LocalStorage.
-Clique no botão "Voltar", caso queira ir para a página inicial:
+Caso deseje retornar para página inicial, basta Clicar no botão "Voltar".
 
-![2021-07-25 (9)_LI](https://github.com/CarmoPJunior/gama-gestao-cadastros/blob/main/img/cadastro_cliente.png)
+![2021-07-25 (9)_LI](https://github.com/CarmoPJunior/gama-gestao-cadastros/blob/main/img/cadastro_produto.png)
 
 
 
