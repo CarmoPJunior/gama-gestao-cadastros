@@ -15,13 +15,13 @@ https://gestaocad.netlify.app/
 
 1. Tela inicial com 2 botões, para cadastrar um Produto ou um Cliente:
 
-![2021-07-23 (8)_LI](https://user-images.githubusercontent.com/86375264/126843017-b7a931aa-534a-49b9-99be-c5294036f4d1.jpg)
+![2021-07-25 (8)_LI](https://github.com/CarmoPJunior/gama-gestao-cadastros/blob/main/img/tela_inicial.png)
 
 
 
 2. No campo de preenchimento, as abas são divididas em: "Categoria", "Marca", "Nome" e "Quantidade", preencha todos eles. Depois de preencher, clique no botão "Cadastrar Produto":
 
-![2021-07-23 (9)_LI](https://user-images.githubusercontent.com/86375264/126843415-441035e8-c8ae-4bc6-91ec-66c8d81f660f.jpg)
+![2021-07-25 (9)_LI](https://user-images.githubusercontent.com/86375264/126843415-441035e8-c8ae-4bc6-91ec-66c8d81f660f.jpg)
 
 
 
