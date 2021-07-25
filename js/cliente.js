@@ -21,6 +21,13 @@ formCliente.addEventListener('submit', (e) => {
     popularTabelaClientes();
 
 
+    // Limpa os campos
+    document.getElementById('txtName').value = '';
+    document.getElementById('txtCpf').value = '';
+    document.getElementById('txtEmail').value = '';
+    document.getElementById('txtTelefone').value = '';
+
+
 });
 
 function popularTabelaClientes(){

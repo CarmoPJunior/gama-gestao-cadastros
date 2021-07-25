@@ -20,6 +20,12 @@ formProduto.addEventListener('submit', (e) => {
     // Reacarrega as informações no Table
     popularTabelaProdutos();
 
+    // Limpa os campos
+    document.getElementById('txtCodigoProduto').value = '';
+    document.getElementById('txtNomeProduto').value = '';
+    document.getElementById('txtValorProduto').value = '';
+    document.getElementById('txtQuantidadeProduto').value = '';
+
 });
 
 function popularTabelaProdutos(){
