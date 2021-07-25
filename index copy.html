@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Gama - Landing Page</title>
+
+        <link rel="stylesheet" href="css/geral.css" >
+
+
+        <script>
+            function cadastrarEmail() {
+                //Pega o email do campo email
+                const email = document.getElementById('email').value;
+                const name = document.getElementById('name').value;
+
+                // Cria o objeto
+                const dataObject = {email, name};
+
+                //Verifica se o local storage está nulo 
+
+                if (localStorage.getItem('emails') === null) {
+                    // Adicionando um array com um objeto no localstorage
+                    localStorage.setItem('emails', JSON.stringify([dataObject]));
+                } else {
+                    // Copia o array do localstorage e adiciona um novo objeto ao final.
+                    localStorage.setItem(
+                        'emails',
+                        JSON.stringify([...JSON.parse(localStorage.getItem('emails')), dataObject ])
+                    );
+                }
+            }
+        </script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <nav>
+                
+                <a class="navbar-brand" href="/">
+                    <img    class="img-navbar" 
+                            src="https://xpcorp.gama.academy/assets/logo-nav-black-478b995c681064a54339fa14e4885288162d2cb9c6a8ddca326315622f0a25cf.svg" 
+                            alt="Logo nav black" />
+                </a>       
+                
+            </nav>
+        </header>
+
+        <section class="titulo-promocao">        
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-1  text-bold">Black Friday</h1>
+                <p class="fs-5 text-muted">Obtenha novos conhecimentos com a grande Promoção de cursos!</p>
+                <br>
+                <h2 class="badge badge--promo-tag-84 badge-title">
+                    Cursos com Até 70% de desconto
+                </h2>
+            </div>
+
+        </section>
+
+
+        <section>        
+
+            <div class="noticias">
+
+                
+                <div class="card">
+
+                    <img src="img/angular.jpg" alt="" style="width:100%">
+
+                    <div class="card-container">
+
+                        <h4>
+                            <b>Angular</b>
+                        </h4> 
+
+                        <p>Aprenda a desenvolver uma aplicação do zero com Angular.
+                        </p> 
+                        <br>
+                        <p>
+                            <span class="price-badges--badges t-price-badges--badges">
+                                <span class="badge badge--promo-tag-84 ">PROMOÇÃO</span>
+                            </span>
+                            <span class="price-badges js-price-badges t-price-badges">                                
+                                <p>70% de desconto</p>
+                                <p>de R$ 500,00 por <b class="m-price">R$ 150,00</b></p>                                
+                            </span>
+
+
+                        </p>
+                        
+
+                        <div class="card-link">
+                            <a href="*" target="_blank">
+                                Saiba mais
+                            </a>
+                        </div>
+                        
+
+                    </div>                  
+
+                    
+                </div>    
+
+                <div class="card">
+
+                    <img src="img/react.jpg" alt="" style="width:100%">
+
+                    <div class="card-container">
+
+                        <h4>
+                            <b>React</b>
+                        </h4> 
+
+                        <p>O curso para se tornar um ninja em React.js, e todas as ferramentas do ecossistema! 
+                        </p> 
+                        <br>
+                        <p>
+                            <span class="price-badges--badges t-price-badges--badges">
+                                <span class="badge badge--promo-tag-84 ">PROMOÇÃO</span>
+                            </span>
+                            <span class="price-badges js-price-badges t-price-badges">                                
+                                <p>70% de desconto</p>
+                                <p>de R$ 500,00 por <b class="m-price">R$ 150,00</b></p>                                
+                            </span>
+
+                        </p>
+                        
+
+                        <div class="card-link">
+                            <a href="*" target="_blank">
+                                Saiba mais
+                            </a>
+                        </div>
+                        
+
+                    </div>                  
+                </div>    
+
+                <div class="card">
+
+                    <img src="img/html-css.jpg" alt="" style="width:100%;">
+
+                    <div class="card-container">
+
+                        <h4>
+                            <b>HTML e CSS</b>
+                        </h4> 
+
+                        <p>HTML e CSS da maneira certa e usando boas práticas da web 
+                        </p> 
+                        <br>
+                        <p>
+                            <span class="price-badges--badges t-price-badges--badges">
+                                <span class="badge badge--promo-tag-84 ">PROMOÇÃO</span>
+                            </span>
+                            <span class="price-badges js-price-badges t-price-badges">                                
+                                <p>70% de desconto</p>
+                                <p>de R$ 500,00 por <b class="m-price">R$ 150,00</b></p>                                
+                            </span>
+                        </p>
+                        
+
+                        <div class="card-link">
+                            <a href="*" target="_blank">
+                                Saiba mais
+                            </a>
+                        </div>
+                        
+
+                    </div>                  
+                </div>
+                  
+                <div class="card">
+
+                    <img src="img/ilustrator.jpg" alt="" style="width:100%">
+
+                    <div class="card-container">
+
+                        <h4>
+                            <b>Ilustrator</b>
+                        </h4> 
+
+                        <p>Aprenda sobre técnicas, estilos nos softwares mais importantes para fazer ilustrações.
+                        </p> 
+                        <br>
+                        <p>
+                            <span class="price-badges--badges t-price-badges--badges">
+                                <span class="badge badge--promo-tag-84 ">PROMOÇÃO</span>
+                            </span>
+                            <span class="price-badges js-price-badges t-price-badges">                                
+                                <p>70% de desconto</p>
+                                <p>de R$ 500,00 por <b class="m-price">R$ 150,00</b></p>                                
+                            </span>
+
+                        </p>
+                        
+
+                        <div class="card-link">
+                            <a href="*" target="_blank">
+                                Saiba mais
+                            </a>
+                        </div>
+                        
+
+                    </div>                  
+                </div>
+
+            </div>
+
+        </section>
+
+        <section >        
+
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+
+                <h1 class="display-4 fw-normal">Contato</h1>
+                <p class="fs-5 text-muted">Cadastre seu email para obter mais informações.</p>
+
+                <br>
+                <p>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" placeholder="Nome">
+                    </div>
+                </p>         
+                <br>
+                <p>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                </p>                
+                <br>
+                <button class="btn btn-success"  onclick="cadastrarEmail();">Cadastrar</button>
+            </div>
+
+        </section>
+
+        <footer>
+            
+            <div class="midias-socias">
+
+                <div>
+                    <a class="icon-github" href="https://github.com/CarmoPJunior">GitHub</a>
+                </div>
+
+                <div>
+                    <a class="icon-linkedin" href="https://www.linkedin.com/in/carmo-goncalves-pereira-júnior-703b881a4/">Linkedin</a>
+                </div>
+            </div>
+
+
+            <div class="text-autor">Desenvolvido por C.Júnior - 2021.</div>
+            
+        </footer>
+
+    </body>
+</html>
+
+

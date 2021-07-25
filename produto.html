@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Gama - Gestão de Cadastros</title>
+
+        <link rel="stylesheet" href="css/geral.css" >
+        <link rel="stylesheet" href="css/form.css" >
+        <script src="js/index.js"></script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+
+
+            <header>
+                <nav>
+                    
+                    <a class="navbar-brand" href="/">
+                        <img    class="img-navbar" 
+                                src="https://xpcorp.gama.academy/assets/logo-nav-black-478b995c681064a54339fa14e4885288162d2cb9c6a8ddca326315622f0a25cf.svg" 
+                                alt="Logo nav black" />
+                    </a>       
+                    
+                </nav>
+            </header>
+
+            <div class="container">
+
+                <section class="titulo">        
+
+                    <div class="p-3 pb-md-4 mx-auto text-center">
+                        <h1 class="display-1  text-bold">Cadastro de Produto </h1>                
+                    </div>
+
+                </section>
+            
+                <section>   
+
+                    <form id="formProduto" >
+                    
+                        <div class="card">
+                            
+                            <div class="card-container">
+                                
+                                <div class="row">
+
+                                        <div class="col">
+                                            <label for="txtCodigoProduto">Código *:</label>
+                                            <input  type="text" 
+                                                    name="txtCodigoProduto" 
+                                                    id="txtCodigoProduto" 
+                                                    placeholder="Código do Produto" 
+                                                    required >
+                                        </div>
+
+                                        <div class="col">
+                                            <label for="txtNomeProduto">Nome *:</label>
+                                            <input  type="text" 
+                                                    name="txtNomeProduto" 
+                                                    id="txtNomeProduto" 
+                                                    placeholder="Nome do Produto" 
+                                                    required > 
+                                        </div>
+
+                                </div>                        
+
+                                <div class="row">
+
+                                    <div class="col">
+                                        <label for="txtValorProduto">Valor *:</label>
+                                        <input  type="number" 
+                                                name="txtValorProduto" 
+                                                id="txtValorProduto" 
+                                                placeholder="Valor do Produto" 
+                                                required />
+                                    </div>
+
+                                    <div class="col">
+                                        <label for="txtQuantidadeProduto">Quantidade *:</label>
+                                        <input  type="number" 
+                                                name="txtQuantidadeProduto" 
+                                                id="txtQuantidadeProduto" 
+                                                placeholder="Quantidade do Produto" 
+                                                required />
+                                    </div>
+
+                                </div>
+
+                                <hr>
+
+                                <div class="flex-box">
+
+                                    <input  type="submit" 
+                                            value="Cadastrar"
+                                            class="btn btn-success text-bold flex-item" />
+                                
+                                    <button class="btn btn-success text-bold flex-item"  
+                                            onclick="redirect('index.html');">
+                                        Voltar
+                                    </button>
+
+                                </div>
+
+                            </div>                  
+
+                            
+                        </div>    
+
+                    </form>
+                </section>
+
+                <section>   
+
+                    <div class="card">
+
+                        <div class="p-3 pb-md-4 mx-auto text-center">
+                            <h3 class="text-bold">Produtos Cadastrados</h3>                
+                        </div>
+                            
+                        <table  id="tabelaProdutos" 
+                                class="card-container">
+
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Nome</th>
+                                    <th>Valor</th>
+                                    <th>Quantidade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </section>
+            
+            </div>
+
+            <footer>
+                
+                <div class="midias-socias">
+
+                    <div>
+                        <a class="icon-github" href="https://github.com/CarmoPJunior">GitHub</a>
+                    </div>
+
+                    <div>
+                        <a class="icon-linkedin" href="https://www.linkedin.com/in/carmo-goncalves-pereira-júnior-703b881a4/">Linkedin</a>
+                    </div>
+                </div>
+
+
+                <div class="text-autor">Desenvolvido por C.Júnior - 2021.</div>
+                
+            </footer>
+
+
+        </div>    
+        <script src="js/produto.js"></script>
+
+    </body>
+</html>
+
+
